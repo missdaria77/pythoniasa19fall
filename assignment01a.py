@@ -2,93 +2,53 @@
 Assignment 1-A
 ==============
 
-Write fuction that generates the text below; use at least variables and f-strings.
-For those who are already familiar with Python – write the best code you can to conform to the Zen of Python.
-
->>> print(poem())
-This is the house that Jack built.
----
-This is the malt
-That lay in the house that Jack built.
----
-This is the rat,
-That ate the malt
-That lay in the house that Jack built.
----
-This is the cat,
-That killed the rat,
-That ate the malt
-That lay in the house that Jack built.
----
-This is the dog,
-That worried the cat,
-That killed the rat,
-That ate the malt
-That lay in the house that Jack built.
----
-This is the cow with the crumpled horn,
-That tossed the dog,
-That worried the cat,
-That killed the rat,
-That ate the malt
-That lay in the house that Jack built.
----
-This is the maiden all forlorn,
-That milked the cow with the crumpled horn,
-That tossed the dog,
-That worried the cat,
-That killed the rat,
-That ate the malt
-That lay in the house that Jack built.
----
-This is the man all tattered and torn,
-That kissed the maiden all forlorn,
-That milked the cow with the crumpled horn,
-That tossed the dog,
-That worried the cat,
-That killed the rat,
-That ate the malt
-That lay in the house that Jack built.
----
-This is the priest all shaven and shorn,
-That married the man all tattered and torn,
-That kissed the maiden all forlorn,
-That milked the cow with the crumpled horn,
-That tossed the dog,
-That worried the cat,
-That killed the rat,
-That ate the malt
-That lay in the house that Jack built.
----
-This is the cock that crowed in the morn,
-That waked the priest all shaven and shorn,
-That married the man all tattered and torn,
-That kissed the maiden all forlorn,
-That milked the cow with the crumpled horn,
-That tossed the dog,
-That worried the cat,
-That killed the rat,
-That ate the malt
-That lay in the house that Jack built.
----
-This is the farmer sowing his corn,
-That kept the cock that crowed in the morn,
-That waked the priest all shaven and shorn,
-That married the man all tattered and torn,
-That kissed the maiden all forlorn,
-That milked the cow with the crumpled horn,
-That tossed the dog,
-That worried the cat,
-That killed the rat,
-That ate the malt
-That lay in the house that Jack built.
-<BLANKLINE>
 """
 
-def poem():
-    return ''
+a = "the house that Jack built."
+b = "the malt" 
+c = "the rat,"
+d = "the cat,"
+e = "the dog,"
+f = "the cow with the crumpled horn,"
+g = "the maiden all forlorn,"
+h = "the man all tatter'd and torn,"
+j = "the priest all shaven and shorn,"
+p = "the cock that crow'd in the morn,"
+m = "the farmer sowing his corn," 
 
+a1 = "That lay in "
+b1 = "That ate "
+c1 = "That kill'd "
+d1 = "That worried "
+e1 = "That tossed "
+f1 = "That milk'd "
+g1 = "That kissed "
+h1 = "That married "
+j1 = "That waked "
+p1 = "That kept "
+m1 = "This is "
+ 
+str_poem = [a, b, c, d, e, f, g, h, j, p, m]
+str_poem1 = [a1, b1, c1, d1, e1, f1, g1, h1, j1, p1, m1]
 
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()
+'''
+#cначала не увидела, что там меняется текст
+k = 1
+for i in str_poem:
+	while (str_poem.index(i))<=k and k<=len(str_poem):
+		poem = '\n'.join((str_poem[0:k]))
+		print (f"{poem}\n\n")
+		k = k+1
+	break
+'''
+print(f"{m1}{a}\n\n{m1}{b}\n{a1}{a}\n\n{m1}{c}\n{b1}{b}\n{a1}{a}\n\n\
+{m1}{d}\n{c1}{c}\n{b1}{b}\n{a1}{a}\n\n{m1}{e}\n{d1}{d}\n{c1}{c}\n{b1}{b}\n\
+{a1}{a}\n\n{m1}{f}\n{e1}{e}\n{d1}{d}\n{c1}{c}\n{b1}{b}\n{a1}{a}\n\n{m1}{g}\n\
+{f1}{f}\n{e1}{e}\n{d1}{d}\n{c1}{c}\n{b1}{b}\n{a1}{a}\n\n{m1}{h}\n{g1}{g}\n\
+{f1}{f}\n{e1}{e}\n{d1}{d}\n{c1}{c}\n{b1}{b}\n{a1}{a}\n\n{m1}{j}\n{h1}{h}\n\
+{g1}{g}\n{f1}{f}\n{e1}{e}\n{d1}{d}\n{c1}{c}\n{b1}{b}\n{a1}{a}\n\n{m1}{p}\n\
+{j1}{j}\n{h1}{h}\n{g1}{g}\n{f1}{f}\n{e1}{e}\n{d1}{d}\n{c1}{c}\n{b1}{b}\n\
+{a1}{a}\n\n{m1}{m}\n{p1}{p}\n{j1}{j}\n{h1}{h}\n{g1}{g}\n{f1}{f}\n{e1}{e}\n\
+{d1}{d}\n{c1}{c}\n{b1}{b}\n{a1}{a}")
+		
+	
