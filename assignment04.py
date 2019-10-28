@@ -41,6 +41,7 @@ def task4(digit):
     """
     return int(digit) + int(f'{digit}{digit}') + int(f'{digit}{digit}{digit}') + int(f'{digit}{digit}{digit}{digit}')
 
+
 def task5(text, letter1, letter2):
     """
     You are given three inputs: a string, one letter, and a second letter.
@@ -76,7 +77,6 @@ def task6(text, censored):
         text = text.replace('*', s, 1)
     return text
 
-
 from functools import reduce
 def task7(text, words):
     """
@@ -106,6 +106,7 @@ def task7(text, words):
             if amount > count:
                 return False
         return True
+
 
     return match("".join(words))
 

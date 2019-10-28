@@ -7,7 +7,9 @@ def task1(first, last, func):
     """
     print(','.join(str(i) for i in range(first, last + 1) if func(i)))
 
+
 task1(2000, 3200, lambda  i: i % 7 ==0 and i % 5 !=0)
+
 
 def task2(rows, cols):
     """
@@ -58,7 +60,6 @@ def task3(password):
             and any('0' <= s <= '9' for s in password)
             and any (s in '#@$' for s in password))
 
-
 import random
 import string
 
@@ -67,7 +68,6 @@ def task4():
     Write password generator function that uses the same rules as in Task 3.
     The password generator function must be able to generate all possible correct passwords.
     """
-
     l = '$@#'
     pass_gen = ''.join(random.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits + l) for i in range(random.randint(6, 12)))
     return(pass_gen)
@@ -77,6 +77,7 @@ while True:
     if task3(a):
         print(a)
         break
+    
 
 
 if __name__ == '__main__':
